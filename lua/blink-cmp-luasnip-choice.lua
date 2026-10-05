@@ -65,7 +65,7 @@ vim.api.nvim_create_autocmd("User", {
 	pattern = "LuasnipChoiceNodeEnter",
 	callback = function()
 		vim.schedule(function()
-			require("blink-cmp").show({
+			require("blink.cmp").show({
 				providers = { "choice" },
 			})
 		end)
